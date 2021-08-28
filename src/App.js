@@ -52,8 +52,12 @@ function App() {
       <div className="Media">
         {files.map((file, i)=>(
           <div key={file._id} className="item">
-            <a className="Link" href={`http://localhost:5000/read/${file.filename}`}>{file.filename}</a>
-
+            
+              < video width="auto" height="auto" className="video" controls autoPlay>
+                 src = "{`http://localhost:5000/read/${file.filename}`}"
+              </video>
+                 <a className="Link" href={`http://localhost:5000/read/${file.filename}`}>{file.filename}.mp4</a>
+            
             <button type="button" onClick={()=>{removeFile(file.filename, i); } }>Remove</button>
           </div>
         ))}

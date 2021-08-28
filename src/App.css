@@ -5,6 +5,8 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  border: 5px solid blue;
+ 
 }
 .Media {
   display: flex;
@@ -12,6 +14,10 @@
   justify-content: space-between;
 
   overflow-y: scroll;
+}
+.video{
+  size: 400px;
+  background-color: rgb(129, 139, 139);
 }
 
 .Item {
